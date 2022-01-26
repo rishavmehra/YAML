@@ -1,0 +1,83 @@
+student: !!seq
+ - marks
+ - name
+ - roll_no
+
+#like this also
+cities: [marks, name]
+
+#some of the keys of the seq will be empty
+#sparse seq
+
+sparse seq:
+ - hey
+ - how
+ -
+ - Null
+ - sup
+
+ #nested sequence
+ -
+  - mango
+  - apple
+  - banana
+-
+ - marks
+ - roll num
+ - date
+
+
+# key: value pair are called maps
+name: Rishav Mehra
+role: {age: 77, job: student}
+
+#pairs: keys may have duplicate values
+#!!pairs
+
+pair example: !!pairs
+ - job: student
+ - job: hacker
+
+pair example: !!pairs [job: student, job: hacker ]
+
+#!!set will allow you to have unique values
+
+names: !!set
+ ? rishu
+ ? aman
+ ? harsh
+
+# dictinary !!omap
+people: !!omap
+ - Rishav:
+    name: Rishav
+    age: 78
+    height: 181
+ - Harsh: 
+    name: Harsh OP
+    age: 43
+    height: 186
+
+#resuse some properties anchors
+likings: &likes
+ fav fruit: mango
+ dislikes: grapes
+
+person1:
+ name: kunal
+ <<: *like
+
+person2:
+ name: rishav
+ <<: *like
+ dislike: berries
+
+#this will look like
+
+person2:
+ name: rishav
+ fav fruit: mango
+ dislikes: berries
+ 
+
+

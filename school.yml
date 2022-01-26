@@ -1,0 +1,7 @@
+School:
+  - name: DPS
+    prinaciple: someone
+    Students:
+      - rno.: 12
+        name: Rishav
+        marks: 75

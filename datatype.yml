@@ -1,0 +1,42 @@
+# String Variables
+name: Risav Mehra
+fruit: "apple"
+job: 'cloud enge'
+
+bio: |
+hey my name is rishav mehra
+im working for my life
+
+#write a single line in multiple line
+message: >
+this will
+all be 
+in one line
+#same as
+message: this will all be in one line
+
+number: 5433 #int
+marks: 98.343 #float
+booleanValue: !!bool NO #boolean n,N,False, FALSE, yes, y, Y
+
+#specify the type
+zero: !!int 0
+positiveNUM: !!int 45
+binaryNUM: !!int -45
+binaryNUM: !!int 0b11001
+octaNUM: !!int 06574
+hexa: !!int 0x45
+commaValue: !!Int +540_000 #540,000
+exponential number: 6.023E56
+#floating Point Numbers
+marks: !!float 54.87
+infinite: !!float .infinite
+
+#null
+surname: !!null Null
+
+#date and Time
+date: !!timestamp 2022-02-26
+india time: 2001-12-26T04:27:43.10 +5:30
+no time zone: 2001-12-26T04:27:43.10 
+

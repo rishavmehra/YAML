@@ -1,0 +1,23 @@
+#Keys
+"apple":"I am a red fruit"
+1:"this is rishav roll number"
+
+---
+#lists
+-apple
+-mango
+-banana
+-Apple
+
+---
+
+cities:
+ - new delhi
+ - mumbai
+ - chandigarh
+---
+cities: [new delhi, mumbai]
+---
+{mango: "yellow fruit", age: "56"}
+
+...
